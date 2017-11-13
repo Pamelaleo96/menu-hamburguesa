@@ -1,0 +1,92 @@
+body {
+    font-family: sans-serif, arial;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    background-color: #28B463;
+    margin: 1%;
+    border: 2px solid #fff;
+    border-radius: 100%;
+}
+
+
+hr {
+    border: solid white 1px;
+    width: 30px;
+}
+
+h1 {
+    color: #28B463;
+    display: inline;
+}
+nav {
+    width: 20%;
+    text-align: left;
+}
+
+
+ul {
+    /*outline: 1px solid blue;*/
+    list-style: none; /*Quitar indices o estilode la lista ordenadas*/
+    margin: 0; /*Quitar el espacio del indice quitado*/
+    padding: 0; /*Para asegurarnos que en otro navegador reconoscan utilizamos margin y padding 0*/
+    line-height: 30px;/*espaciado de lineas entre nuestro menu vertical*/
+}
+
+li {
+    /*outline: 1px solid green;*/
+    background: #f5f5f0;
+}
+
+a {
+    text-decoration: none;
+    color: #28B463;
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+
+a:hover { /*Cuando el mouse esta encima del texto cambie de color el texto*/
+    background: #e0e0d1;
+}
+
+a:active {/*Cuando le doy click al enlace quiero que el background cambie de color*/
+    background: rgb(77, 59, 59); /*Cuando da click cambia el background*/
+    color: #fff; /*Tambien que cambie de color blanco cuando da click*/
+}
+
+/*Utilizamos los selectores de elemnto y descendiente y aplicamos pseudoclase*/
+ul li:first-child { /*utilizamos el pseudocodigo para que escoga la primera linea*/
+    background: #28B463;
+}
+
+ul li:first-child a {/*el color de texto de la primera lista sea blanco*/
+    color: #fff;
+}
+
+ul li:first-child a:hover { /*Cualdo el mouse posicione encima del texto el color del texto cambia*/
+    color: #000;
+}
+
+ul li:first-child a:active { /*Cualdo el mouse da click encima del texto el color del texto cambia*/
+    color: #fff;
+}
+
+li:hover {
+    background-color: rgb(175, 255, 155);
+}
+
+a:hover{
+    color: white;
+}
+
+/*Muestra nuestras opciones del menu*/
+.enabled-menu {
+    display: block;
+}
+
+/*Oculta las opciones del menu*/
+.disabled-menu {
+    display: none;
+}
